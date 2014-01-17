@@ -21,15 +21,6 @@ feature 'Creating Projects' do
         title = "TextMate 2 - Projects - Ticketee"
         expect(page).to have_title(title)
     end
-<<<<<<< HEAD
-   
-    scenrio 'can not create a project without a name' do
-   	click_button 'Create Project'
-
-	expect(page).to have_content('Project has not been created.')
- 	expect(page).to have_content("Name can't be blank")
-    end
-=======
 
     scenario "can not create a project without a name" do
         click_button 'Create Project'
@@ -37,6 +28,4 @@ feature 'Creating Projects' do
         expect(page).to have_content("Project has not been created.")
         expect(page).to have_content("Name can't be blank")
     end
-
->>>>>>> 413cb804427bf98214c0b86283dee82cbda3df4d
 end
